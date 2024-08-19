@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    background-color: black;
+    background-image: linear-gradient(90deg, rgb(20, 20, 20), rgb(40, 10, 80));
+}
+
+/*-----Space_Animation-----*/
+
+@keyframes twinkle {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*-----form-----*/
+
+#form {
+    background-color: rgb(30, 10, 80, 0.7);
+    border-radius: 20px;
+    border: 3px solid white;
+    margin: 15% auto;
+    width: 684px;
+    height: 393px;
+    position: relative;
+    z-index: 5;
+}
+
+#box {
+    font-size: 30px;
+    color: white;
+    border: none;
+}
+
+.loginTitle {
+    padding-top: 30px;
+    padding-left: 110px;
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    margin: auto;
+    font-family: monospace;
+}
+
+.all {
+    padding-top: 35px;
+    display: inline-block;
+    width: 350px;
+    text-align: right;
+    vertical-align: 10px;
+    font-family: monospace;
+}
+
+.textbox {
+    width: 210px;
+    height: 30px;
+    vertical-align: 15px;
+    padding-left: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+#submit {
+    border: none;
+    padding-top: 20px;
+    padding-left: 240px;
+}
+
+.submit {
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: white;
+    border-radius: 30px;
+    background-color: rgb(80, 20, 200);
+    border: 1px solid white;
+}
+
+.submit:hover {
+    background-color: rgb(80, 25, 190);
+    cursor: pointer;
+}
+
+#login {
+    padding-left: 195px;
+    color: white;
+    font-family: monospace;
+    font-size: 15px;
+    border: none;
+}
+
+.login {
+    text-decoration: none;
+    color: white;
+}
+
+/*-----Footer-----*/
+
+#footer {
+    background: linear-gradient(90deg, rgb(20, 20, 20), rgb(30, 10, 80));
+    border-top: 2px solid rgb(255, 255, 255, 0.6);
+    width: 100vw;
+    height: 7vh;
+    position: absolute;
+    bottom: -7.5vh;
+    z-index: 10;
+}
+
+.container {
+    margin: 15px auto;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.githubButton {
+    width: 40px;
+    height: 40px;
+}
+
+.githubButton:hover {
+    animation: hover 0.2s ease-in-out forwards;
+}
+
+.linkedinButton {
+    width: 40px;
+    height: 40px;
+}
+
+.linkedinButton:hover {
+    animation: hover 0.2s ease-in-out forwards;
+}
+
+.instagramButton {
+    width: 40px;
+    height: 40px;
+}
+
+.instagramButton:hover {
+    animation: hover 0.2s ease-in-out forwards;
+}
+
+@keyframes hover {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+

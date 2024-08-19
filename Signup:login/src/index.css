@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    background-color: black;
+    background-image: linear-gradient(90deg, rgb(20, 20, 20), rgb(40, 10, 80));
+}
+
+/*-----Space_Animation-----*/
+
+@keyframes twinkle {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*-----Box-----*/
+
+#box {
+    background-color: rgb(30, 10, 80, 0.7);
+    border-radius: 20px;
+    border: 3px solid white;
+    margin: 17.5% auto;
+    width: 684px;
+    height: 296px;
+    position: relative;
+    z-index: 5;
+}
+
+.homeTitle {
+    color: white;
+    font-size: 40px;
+    font-family: monospace;
+    font-weight: 300;
+    position: absolute;
+    margin: 6% 25%;
+}
+
+.box1 {
+    margin: 125px 50px;
+    width: 15vw;
+    height: 7vh;
+    background-color: rgb(0, 0, 0, 0.3);
+    border: 3px solid white;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 6;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.box1:hover {
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.box2 {
+    margin: 125px 365px;
+    width: 15vw;
+    height: 7vh;
+    background-color: rgb(0, 0, 0, 0.3);
+    border: 3px solid white;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 6;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.box2:hover {
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+/*-----Footer-----*/
+
+#footer {
+    background: linear-gradient(90deg, rgb(20, 20, 20), rgb(30, 10, 80));
+    border-top: 2px solid rgb(255, 255, 255, 0.6);
+    width: 100vw;
+    height: 7vh;
+    position: absolute;
+    bottom: -7.5vh;
+    z-index: 10;
+}
+
+.container {
+    margin: 15px auto;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.githubButton {
+    width: 40px;
+    height: 40px;
+}
+
+.githubButton:hover {
+    animation: hover 0.2s ease-in-out forwards;
+}
+
+.linkedinButton {
+    width: 40px;
+    height: 40px;
+}
+
+.linkedinButton:hover {
+    animation: hover 0.2s ease-in-out forwards;
+}
+
+.instagramButton {
+    width: 40px;
+    height: 40px;
+}
+
+.instagramButton:hover {
+    animation: hover 0.2s ease-in-out forwards;
+}
+
+@keyframes hover {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}

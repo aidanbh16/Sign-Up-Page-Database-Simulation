@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="../src/login.css" rel="stylesheet">
+        <title>Account Project - Login</title>
+    </head>
+    <body>
+        <section>
+            <div id="star"></div>
+            <script src="../src/starPos.js"></script>
+        </section>
+        <main>
+            <form id="form">
+                <fieldset id="box">
+                    <h1 class="loginTitle">Universal Sign In</h1>
+                    <label for="user" class="user all">Username/Email: </label>
+                    <input type="text" class="userBox textbox" name="userEmail" minlength="5"></br>
+                    <label for="pass" class="pass all">Password: </label>
+                    <input type="password" class="passBox textbox" name="pass" maxlength="20" minlength="8"></br>
+                </fieldset>
+                <fieldset id="submit">
+                    <input type="submit" class="submit">
+                </fieldset>
+                <fieldset id="login">
+                    Don't have an account?
+                    <a href="signup.html" class="login">Sign up</a>
+                </fieldset>
+            </form>
+            <script src="../src/signUp.js"></script>
+        </main>
+        <footer id="footer">
+            <div class="footerBody">
+                <div class="container">
+                    <a href="https://github.com/aidanbh16" target="_blank"><img src="../src/img/github.512x499.png" alt="github" class="githubButton"></a>
+                    <a href="https://www.linkedin.com/in/aidan-holton/" target="_blank"><img src="../src/img/linkedin-app-white-icon.png" alt="linkedin" class="linkedinButton"></a>
+                    <a href="https://www.instagram.com/holton_aidan/" target="_blank"><img src="../src/img/instagram-white-icon.png" alt="instagram" class="instagramButton"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

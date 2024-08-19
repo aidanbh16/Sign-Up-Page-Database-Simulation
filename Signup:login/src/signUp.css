@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    background-color: black;
+    background-image: linear-gradient(90deg, rgb(20, 20, 20), rgb(40, 10, 80));
+}
+
+/*-----Space_Animation-----*/
+
+@keyframes twinkle {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes float {
+    0% {
+        top: 550px;
+        transform: rotate(10deg);
+    }
+    50% {
+        top: 600px;
+        transform: rotate(25deg);
+    }
+    100% {
+        top: 550px;
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes rocket {
+    0% {
+        top: 400px;
+        left: 100px;
+    }
+    30% {
+        top: -400px;
+        left: 900px;
+    }
+    50% {
+        top: -400px;
+        left: -400px;
+    }
+    70% {
+        top: 750px;
+        left: -400px;
+    }
+    100% {
+        top: 400px;
+        left: 100px;
+    }
+}
+
+/*-----Space_Classes-----*/
+
+.planet1 {
+    position: absolute;
+    z-index: 1;
+    top: -300px;
+    left: 600px;
+    width: 1100px;
+}
+
+.astro {
+    position: absolute;
+    top: 600px;
+    left: 340px;
+    z-index: 2;
+    width: 120px;
+    animation: float 5s ease-in-out infinite;
+    filter: brightness(85%);
+}
+
+.rocket {
+    position: absolute;
+    width: 350px;
+    top: 400px;
+    left: 100px;
+    animation: rocket 4s ease-in-out infinite;
+    z-index: 1;
+    filter: brightness(90%);
+}
+
+/*-----Main-----*/
+
+#form {
+    background-color: rgb(30, 10, 80, 0.7);
+    border-radius: 20px;
+    border: 3px solid white;
+    margin: 10% auto;
+    width: 684px;
+    height: 540.5px;
+    position: relative;
+    z-index: 5;
+}
+
+#box {
+    font-size: 30px;
+    color: white;
+    border: none;
+}
+
+.signUpTitle {
+    padding-top: 30px;
+    padding-left: 110px;
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    margin: auto;
+    font-family: monospace;
+}
+
+.all {
+    padding-top: 25px;
+    display: inline-block;
+    width: 350px;
+    text-align: right;
+    vertical-align: 10px;
+    font-family: monospace;
+}
+
+.textbox {
+    width: 210px;
+    height: 30px;
+    vertical-align: 15px;
+    padding-left: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+#terms {
+    border: none;
+    padding-left: 250px;
+}
+
+.check:hover {
+    cursor: pointer;
+}
+
+.terms {
+    color: white;
+    font-size: 15px;
+    font-family: system-ui;
+    position: relative;
+    top: -1px;
+}
+
+#submit {
+    border: none;
+    padding-top: 5px;
+    padding-left: 240px;
+}
+
+.submit {
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: white;
+    border-radius: 30px;
+    background-color: rgb(80, 20, 200);
+    border: 1px solid white;
+}
+
+.submit:hover {
+    background-color: rgb(80, 25, 190);
+    cursor: pointer;
+}
+
+#signUp {
+    padding-top: 10px;
+    padding-left: 195px;
+    color: white;
+    font-family: monospace;
+    font-size: 15px;
+    border: none;
+}
+
+.signUp {
+    text-decoration: none;
+    color: white;
+}
+
+/*-----Footer-----*/
+
+#footer {
+    background: linear-gradient(90deg, rgb(20, 20, 20), rgb(30, 10, 80));
+    border-top: 2px solid rgb(255, 255, 255, 0.6);
+    width: 100vw;
+    height: 7vh;
+    position: absolute;
+    bottom: -7.5vh;
+    z-index: 10;
+}
+
+.container {
+    margin: 15px auto;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.githubButton {
+    width: 40px;
+    height: 40px;
+}
+
+.githubButton:hover {
+    animation: hover 0.2s ease-in-out forwards;
+}
+
+.linkedinButton {
+    width: 40px;
+    height: 40px;
+}
+
+.linkedinButton:hover {
+    animation: hover 0.2s ease-in-out forwards;
+}
+
+.instagramButton {
+    width: 40px;
+    height: 40px;
+}
+
+.instagramButton:hover {
+    animation: hover 0.2s ease-in-out forwards;
+}
+
+@keyframes hover {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
